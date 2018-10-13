@@ -2,12 +2,11 @@ library("ggplot2")
 library("ggpubr")
 library("dplyr")
 
+# TODO: Set path to be relative from Nextflow call
 ROOT_PATH <- "/home/kevinchern/blang/blangSDK/results/all/2018-10-06-13-14-16-DvYGO22c.exec/samples/"
 ROOT_PATH <- "/home/kevinchern/blang/blangSDK/results/latest/samples/"
 atks_star <- read.csv(paste(ROOT_PATH, "atks_star.csv", sep=""))
-# atks      <- read.csv(paste(ROOT_PATH, "atks.csv",      sep=""))
 defs_star <- read.csv(paste(ROOT_PATH, "defs_star.csv", sep=""))
-# defs      <- read.csv(paste(ROOT_PATH, "defs.csv",      sep=""))
 home      <- read.csv(paste(ROOT_PATH, "home.csv"     , sep=""))
 intercept <- read.csv(paste(ROOT_PATH, "intercept.csv", sep=""))
 sd_atk    <- read.csv(paste(ROOT_PATH, "sd_atk.csv"   , sep=""))
